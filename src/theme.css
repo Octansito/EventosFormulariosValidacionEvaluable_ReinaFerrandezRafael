@@ -1,0 +1,25 @@
+/* theme.css
+* Clase guía de estética de mi catálogo
+*/
+
+/* Clase personalizada para Nunito */
+.font-nunito {
+  font-family: "Nunito", sans-serif;
+}
+
+/* Clase personalizada para Poppins */
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Variables como referencia*/
+:root {
+  --color-principal: #0c3c34;
+  --color-secundario: #555555;
+  --color-boton: #ff9800;
+  --color_tituloh1: #0c3c34;
+  --color-background: #e8f5e9;
+  --color-boton-hover: #f57c00;
+  --color-fondo-claro: #111111;
+  --color-texto-boton: #000000;
+}
