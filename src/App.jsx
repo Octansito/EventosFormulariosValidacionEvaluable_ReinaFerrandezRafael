@@ -6,7 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Catalogo from "./pages/Catalogo";
 import Fichas from "./pages/Fichas";
-import Admin from "./pages/Admin";
+import Admin from "./pages/Admin.jsx";
 
 /**
  *  Componente principal de la aplicación PawPets

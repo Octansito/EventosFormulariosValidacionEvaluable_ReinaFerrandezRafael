@@ -35,6 +35,7 @@ function PetCard({
     raza,
     tamano,
     chip,
+    numChip,
     ubicacion,
     descripcion,
   };

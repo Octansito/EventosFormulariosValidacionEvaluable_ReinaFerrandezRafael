@@ -15,7 +15,7 @@ const animales = {
       numChip: "ES7A-93K2-LF82",
       descripcion:
         "Perro de mirada noble y carácter equilibrado. Es fuerte, fiel y muy sociable con las personas. Perfecto para familias que busquen un compañero leal, cariñoso y con ganas de formar parte de un hogar donde recibir y dar mucho amor.",
-      raza: "Tipo American Staffordshire / Mestizo similar",
+      raza: "Tipo American Staffordshire / Mestizo",
     },
     {
       id: 2,

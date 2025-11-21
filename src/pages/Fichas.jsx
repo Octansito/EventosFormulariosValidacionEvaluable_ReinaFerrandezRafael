@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { useState } from "react";
 import favorito from "../assets/favorito.svg";
 import favoritoRed from "../assets/favorito-red.svg";
+import { Link } from "react-router-dom";
 
 /**
  *Página de fichas individuales de animales.
@@ -31,27 +32,50 @@ function Fichas() {
     <Contenedor>
       <main
         aria-label="Contenido principal"
-        className="flex flex-col lg:flex-row gap-10"
+        className="flex flex-col lg:flex-row items-center lg:items-start gap-30"
       >
         {/**Columna izq --> imagen */}
-        <section aria-label="ImagenFicha" className="w-full lg:max-w-[450px]">
-          <figure>
+        <section
+          aria-label="ImagenFicha"
+          className="ml-100px w-full lg:w-[500px] flex justify-center"
+        >
+          <figure className="w-full h-full">
             <img
               src={animal.imagen}
-              className="w-full h-[350px] object-cover rounded-xl border-4 border-blue-400 shadow-lg"
+              className="w-full h-full object-cover mb-[30px] mt-[30px] rounded-xl border-4 border-[#0E6149] shadow-lg"
             />
           </figure>
         </section>
+
         {/**Columna der --> datos */}
-        <section aria-label="InformacionAnimal" className="flex-1">
-          <header>
-            <h1>Nombre: {animal.nombre}</h1>
-            <h2 className="text-2xl font-semibold text-[#0C3C34]">
-              Raza: {animal.raza}
-            </h2>
+        <section
+          aria-label="InformacionAnimal"
+          className="flex-1 mt-[30px] gap-3 flex flex-col"
+        >
+          <header className="grid grid-cols-[3fr_1fr] items-start">
+            {/* Columna izquierda */}
+            <div className="flex flex-col gap-2">
+              <h1 className="text-[50px] font-bold text-[#000000]">
+                Nombre: {animal.nombre}
+              </h1>
+              <h2 className="text-[28px] font-poppins font-semibold text-[#000000]">
+                Raza: {animal.raza}
+              </h2>
+            </div>
+
+            {/* Columna derecha → botón alineado a derecha */}
+            <div className="flex justify-end items-start">
+              <Link
+                to="/catalogo"
+                className="bg-[#E0E0E0] border border-black rounded-lg px-4 py-1 text-black font-semibold hover:bg-[#D5D5D5]"
+              >
+                Volver
+              </Link>
+            </div>
           </header>
+
           {/**Lista de datos */}
-          <ul className="text-xl text-[#333] space-y-1">
+          <ul className="text-xl text-[25px] text-[#000000] font-nunito space-y-1 flex flex-col gap-2">
             <li>
               <b>Edad:</b> {animal.edad}
             </li>
@@ -74,11 +98,11 @@ function Fichas() {
             </li>
           </ul>
           {/* Descripción */}
-          <article className="border border-[#0C3C34] bg-[#E8F5E9] rounded-xl p-4 mt-6">
-            <h3 className="font-poppins font-semibold text-2xl text-[#0C3C34] mb-2">
+          <article className="border border-[#006E4F] bg-[#B1E9DE] rounded-xl p-4 mt-6">
+            <h3 className="font-poppins font-semibold text-2xl text-[#000000] mb-2">
               Descripción:
             </h3>
-            <p className="text-lg text-[#555] leading-relaxed">
+            <p className="text-lg text-[#000000] leading-relaxed">
               {animal.descripcion}
             </p>
           </article>
