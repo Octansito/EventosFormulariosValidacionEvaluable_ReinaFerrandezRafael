@@ -64,28 +64,35 @@ function PetCard({
         </p>
       </Link>
 
-      <Button
-        to="/fichas"
-        state={animalData}
-        className="mt-2 bg-[#FF9800] border border-black text-black hover:bg-[#F57C00]"
-      >
-        Ver ficha
-      </Button>
-      {/* Botón Favorito */}
-      <button
-        type="button"
-        aria-pressed={esFavorito}
-        onClick={() => setEsFavorito(!esFavorito)}
-        className="ml-2 bg-transparent border-none p-0 focus:outline-none"
-        aria-label={esFavorito ? "Quitar de favoritos" : "Marcar como favorito"}
-      >
-        <img
-          src={esFavorito ? favoritoRed : favorito}
-          alt=""
-          aria-hidden="true"
-          className="w-6 h-6 cursor-pointer transition"
-        />
-      </button>
+      {/* Contenedor de acciones: Ver ficha + Favorito */}
+      <div className="mt-2 flex items-center justify-between">
+        {/* Botón Ver ficha */}
+        <Button
+          to="/fichas"
+          state={animalData}
+          className="bg-[#FF9800] border border-black text-black hover:bg-[#F57C00]"
+        >
+          Ver ficha
+        </Button>
+
+        {/* Botón Favorito */}
+        <button
+          type="button"
+          aria-pressed={esFavorito}
+          onClick={() => setEsFavorito(!esFavorito)}
+          className="bg-transparent border-none p-0 focus:outline-none"
+          aria-label={
+            esFavorito ? "Quitar de favoritos" : "Marcar como favorito"
+          }
+        >
+          <img
+            src={esFavorito ? favoritoRed : favorito}
+            alt=""
+            aria-hidden="true"
+            className="w-6 h-6 cursor-pointer transition"
+          />
+        </button>
+      </div>
     </article>
   );
 }

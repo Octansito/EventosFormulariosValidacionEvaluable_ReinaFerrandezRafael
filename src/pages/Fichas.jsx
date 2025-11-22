@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 import { useState } from "react";
 import favorito from "../assets/favorito.svg";
 import favoritoRed from "../assets/favorito-red.svg";
-import { Link } from "react-router-dom";
 import Button from "../components/Button";
 
 /**
@@ -71,9 +70,10 @@ function Fichas() {
             </div>
 
             {/* Columna derecha*/}
+
             <Button
               to="/catalogo"
-              className="bg-[#E0E0E0] border border-black text-black hover:bg-[#D5D5D5]"
+              className="bg-[#E0E0E0] border border-black text-black hover:bg-[#D5D5D5] mt-[25px]"
             >
               Volver
             </Button>
@@ -120,16 +120,21 @@ function Fichas() {
           {/** Sección botones */}
           <section
             aria-label="Acciones disponibles"
-            className="flex items-center gap-4 mt-6"
+            className="flex items-center justify-between mt-6"
           >
-            <button className="mt-2 inline-block bg-[#FF9800] border border-black rounded-lg px-2 py-[4px] text-black font-semibold hover:bg-[#F57C00]">
+            {/* Botón Adoptar */}
+            <button
+              className="bg-[#FF9800] border border-black rounded-lg px-4 py-2
+                        text-black font-semibold hover:bg-[#F57C00]"
+            >
               Adoptar
             </button>
 
+            {/* Botón Favorito */}
             <button
               type="button"
               onClick={() => setEsFavorito(!esFavorito)}
-              className="ml-2 bg-transparent border-none p-0"
+              className="bg-transparent border-none p-0 focus:outline-none"
               aria-label={
                 esFavorito ? "Quitar de favoritos" : "Marcar como favorito"
               }
@@ -138,7 +143,7 @@ function Fichas() {
                 src={esFavorito ? favoritoRed : favorito}
                 alt=""
                 aria-hidden="true"
-                className="w-6 h-6 cursor-pointer transition"
+                className="w-7 h-7 cursor-pointer transition"
               />
             </button>
           </section>

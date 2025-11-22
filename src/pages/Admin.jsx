@@ -1,5 +1,8 @@
 import Contenedor from "../components/Contenedor";
-
+/**
+ *
+ * @returns Página de administración
+ */
 function Admin() {
   return (
     <Contenedor>
