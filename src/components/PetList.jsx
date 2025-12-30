@@ -13,7 +13,7 @@ function PetList() {
       <section aria-labelledby="titulo-perros" className="mb-12">
         <h2
           id="titulo-perros"
-          className="font-poppins font-semibold text-[18px] text-[#555555] underline underline-offset-4 ml-0 mb-4"
+          className="font-poppins font-semibold text-[18px] text-[var(--colorgrey-3)] underline underline-offset-4 ml-0 mb-4"
         >
           Sección Perros
         </h2>
@@ -27,7 +27,10 @@ function PetList() {
 
       {/* Sección Gatos */}
       <section aria-labelledby="titulo-gatos" className="mb-12">
-        <h2 className="font-poppins font-semibold text-[18px] text-[#555555] underline underline-offset-4 ml-0 mb-4">
+        <h2
+          id="titulo-gatos"
+          className="font-poppins font-semibold text-[18px] text-[var(--colorgrey-3)] underline underline-offset-4 ml-0 mb-4"
+        >
           Sección Gatos
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 gap-y-4 w-full mt-8">
@@ -38,10 +41,10 @@ function PetList() {
       </section>
 
       {/* Sección Adoptados */}
-      <section>
+      <section aria-labelledby="titulo-adoptados">
         <h2
-          aria-labelledby="titulo-adoptados"
-          className="font-poppins font-semibold text-[18px] text-[#555555] underline underline-offset-4 ml-0 mb-4"
+          id="titulo-adoptados"
+          className="font-poppins font-semibold text-[18px] text-[var(--colorgrey-3)] underline underline-offset-4 ml-0 mb-4"
         >
           Sección Adoptados
         </h2>

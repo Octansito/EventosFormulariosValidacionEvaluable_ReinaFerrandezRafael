@@ -6,11 +6,6 @@ import { useState } from "react";
 import Checkbox from "./CheckBox";
 
 function FilterSection() {
-  /**
-   * Vairables para gaurdar el estado del checkbox
-   * (desactivado --> false)
-   */
-
   // Especie
   const [perro, setPerro] = useState(false);
   const [gato, setGato] = useState(false);
@@ -35,7 +30,7 @@ function FilterSection() {
       <fieldset className="mb-6" aria-labelledby="filtro-especie">
         <legend
           id="filtro-especie"
-          className="font-poppins font-semibold text-[24px] mb-2 text-[#000000]"
+          className="font-poppins font-heading-h5 mb-2 text-[var(--colorblack-1)]"
         >
           Especie
         </legend>
@@ -57,7 +52,7 @@ function FilterSection() {
       <fieldset className="mb-6" aria-labelledby="filtro-edad">
         <legend
           id="filtro-edad"
-          className="font-poppins font-semibold text-[24px] mb-2 text-[#000000]"
+          className="font-poppins font-heading-h5 mb-2 text-[var(--colorblack-1)]"
         >
           Edad
         </legend>
@@ -83,7 +78,7 @@ function FilterSection() {
       <fieldset className="mb-6" aria-labelledby="filtro-tamano">
         <legend
           id="filtro-tamano"
-          className="font-poppins font-semibold text-[24px] mb-2 text-[#000000]"
+          className="font-poppins font-heading-h5 mb-2 text-[var(--colorblack-1)]"
         >
           Tamaño
         </legend>
@@ -97,7 +92,7 @@ function FilterSection() {
       <fieldset className="mb-6" aria-labelledby="filtro-favoritos">
         <legend
           id="filtro-favoritos"
-          className="font-poppins font-semibold text-[24px] mb-2 text-[#000000]"
+          className="font-poppins font-heading-h5 mb-2 text-[var(--colorblack-1)]"
         >
           Favoritos
         </legend>

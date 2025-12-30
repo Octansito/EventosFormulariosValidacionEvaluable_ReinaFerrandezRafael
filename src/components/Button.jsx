@@ -7,7 +7,7 @@ function Button({ children, to, className = "", ...rest }) {
     px-3 py-1.5
     transition-transform duration-150
     hover:scale-[1.04] hover:opacity-90
-    focus:outline-none focus:ring-2 focus:ring-[#0C3C34]
+    focus:outline-none focus:ring-2 focus:ring-[var(--colorprimary)]
   `;
 
   if (to) {

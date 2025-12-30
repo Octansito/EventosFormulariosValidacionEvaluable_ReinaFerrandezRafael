@@ -24,6 +24,7 @@ function PetCard({
    * Estado de favs
    */
   const [esFavorito, setEsFavorito] = useState(false);
+
   /**
    * Datos que se envían a la ficha
    */
@@ -40,12 +41,13 @@ function PetCard({
     ubicacion,
     descripcion,
   };
+
   return (
     <article
       aria-labelledby={`titulo-${id}`}
-      className="bg-white rounded-xl shadow-md max-w-[240px] w-full p-2"
+      className="bg-[var(--colorwhite)] rounded-xl shadow-md max-w-[240px] w-full p-2"
     >
-      <Link to={`/fichas`} state={animalData}>
+      <Link to="/fichas" state={animalData}>
         <img
           src={imagen}
           alt={`Foto de ${nombre}`}
@@ -54,12 +56,12 @@ function PetCard({
 
         <h3
           id={`titulo-${id}`}
-          className="font-poppins font-bold text-[18px] text-[#333] mt-2"
+          className="font-poppins font-bold text-[18px] text-[var(--colorgrey-1)] mt-2"
         >
           {nombre}
         </h3>
 
-        <p className="font-nunito text-[16px] text-[#666]">
+        <p className="font-nunito text-[16px] text-[var(--colorgrey-4)]">
           {genero} — {edad}
         </p>
       </Link>
@@ -70,7 +72,7 @@ function PetCard({
         <Button
           to="/fichas"
           state={animalData}
-          className="bg-[#FF9800] border border-black text-black hover:bg-[#F57C00]"
+          className="bg-[var(--colorcta)] border border-[var(--colorblack-1)] text-[var(--colorblack-1)] hover:bg-[var(--colorcta-hover)]"
         >
           Ver ficha
         </Button>
@@ -80,7 +82,7 @@ function PetCard({
           type="button"
           aria-pressed={esFavorito}
           onClick={() => setEsFavorito(!esFavorito)}
-          className="bg-transparent border-none p-0 focus:outline-none"
+          className="bg-transparent border-none p-0 focus:outline-none focus:ring-2 focus:ring-[var(--colorprimary)] rounded-lg"
           aria-label={
             esFavorito ? "Quitar de favoritos" : "Marcar como favorito"
           }
