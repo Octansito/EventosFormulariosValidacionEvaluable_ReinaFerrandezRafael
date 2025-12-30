@@ -19,7 +19,7 @@ function Fichas() {
   // Si alguien entra a /fichas sin datos
   if (!animal) {
     return (
-      <Contenedor>
+      <>
         <main
           role="main"
           aria-label="Ficha no encontrada"
@@ -29,14 +29,13 @@ function Fichas() {
             No se encontró la ficha del animal
           </h1>
         </main>
-      </Contenedor>
+      </>
     );
   }
 
   return (
-    <Contenedor>
-      <main
-        role="main"
+    <>
+      <section
         aria-label="Ficha del animal"
         className="flex flex-col lg:flex-row items-center lg:items-start gap-30"
       >
@@ -147,8 +146,8 @@ function Fichas() {
             </button>
           </section>
         </section>
-      </main>
-    </Contenedor>
+      </section>
+    </>
   );
 }
 

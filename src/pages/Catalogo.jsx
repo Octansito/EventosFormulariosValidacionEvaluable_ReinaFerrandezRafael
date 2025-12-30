@@ -4,7 +4,7 @@ import PetList from "../components/PetList";
 
 function Catalogo() {
   return (
-    <Contenedor>
+    <>
       <header className="w-full mb-4">
         <h1 className="font-poppins font-semibold text-[36px] text-center text-[var(--colorprimary)] mt-6 mb-2">
           Nuestros animales en adopción 🐾
@@ -12,7 +12,7 @@ function Catalogo() {
       </header>
 
       {/*Filtros + Catálogo*/}
-      <main aria-label="Catálogo de animales" role="main" className="mt-8">
+      <section aria-label="Catálogo de animales" role="main" className="mt-8">
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Filtros */}
           <section
@@ -30,8 +30,8 @@ function Catalogo() {
             <PetList />
           </section>
         </div>
-      </main>
-    </Contenedor>
+      </section>
+    </>
   );
 }
 
