@@ -176,10 +176,10 @@ function NavigationBar() {
         </NavLink>
         <NavLink
           className="text-white text-[20px] lg:text-[22px] font-semibold hover:underline rounded-lg
-                            focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[var(--colorprimary)]"
-          to="/admin"
+            focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[var(--colorprimary)]"
+          to="/login"
         >
-          Admin
+          Iniciar sesión
         </NavLink>
       </nav>
 
@@ -222,11 +222,11 @@ function NavigationBar() {
           </li>
           <li>
             <NavLink
-              to="/admin"
+              to="/login"
               onClick={() => setOpen(false)}
               className="rounded-lg focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[var(--colorprimary)]"
             >
-              Admin
+              Iniciar sesión
             </NavLink>
           </li>
         </ul>

@@ -5,6 +5,8 @@ import Catalogo from "../pages/Catalogo";
 import Fichas from "../pages/Fichas";
 import Admin from "../pages/Admin";
 import Contenedor from "./Contenedor";
+import Login from "../pages/Login.jsx";
+
 /**
  *
  * @returns
@@ -18,6 +20,7 @@ function AppRouter() {
         <Route path="/catalogo" element={<Catalogo />} />
         <Route path="/fichas" element={<Fichas />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/login" element={<Login />} />
       </Route>
 
       {/**Ruta 404 */}
