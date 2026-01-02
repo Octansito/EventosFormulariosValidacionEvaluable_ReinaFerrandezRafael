@@ -15,23 +15,3 @@ Conclusión: He optado por la solución más profesional y habitual en desarroll
 depende de fuentes de imágenes heterogéneas y URLs externas.
 
 
-//Explicación
-
-Hola Marina,
-
-Quería comentarte que, aunque la actividad principal consistía en mostrar un catálogo sencillo de productos (en mi caso, animales para adopción), 
-he aprovechado para ir más allá. Como sabes, voy algo más retrasado en la asignatura y he estado todas las tardes trabajando 
-en este proyecto para ponerme al día y que no me pille el toro, aprender más rápido y, sobre todo, para sacar el máximo partido al diseño que desarrollé en Figma.
-
-He sido muy fiel a mi propio diseño: he aplicado exactamente los colores, la tipografía y la estructura visual que tenía en Figma, 
-utilizando todas las herramientas que hemos visto (y algunas más) para lograr que la versión en React se pareciera lo máximo posible al prototipo.
-
-Además de cumplir con los requisitos de la actividad (catálogo de animales, cada uno con su ficha y su información, distribución simétrica y responsive, buena estética y 
-accesibilidad con tabulador), he querido implementar funcionalidades y detalles extra por mi cuenta, simplemente porque me motivaba el resultado y me ha ayudado a 
-aprender y a coger soltura con React y Tailwind.
-
-Mi objetivo ha sido aprovechar este proyecto para avanzar al ritmo de clase e incluso adelantarme un poco, aplicando conceptos nuevos y asegurándome de que el resultado final 
-es fiel al diseño original.
-Espero que lo veas bien y, si hay algo que deba ajustar para la entrega, házmelo saber.
-
-¡Gracias!

@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
-
+/**
+ * Componente reutilizable que puede comportarse de 2 formas, es decir, se comporta
+ * como enlace o botón normal
+ */
 function Button({ children, to, className = "", ...rest }) {
   const baseStyles = `
     inline-flex items-center justify-center

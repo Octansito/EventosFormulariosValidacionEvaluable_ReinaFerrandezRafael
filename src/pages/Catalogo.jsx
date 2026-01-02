@@ -3,6 +3,10 @@ import FilterSection from "../components/FilterSection";
 import animales from "../data/animales";
 import PetList from "../components/PetList";
 import SearchBar from "../components/SearchBar";
+/* Responsabilidades:
+ * - Cargar/recibir la colección de animales (por ejemplo, perros, gatos y adoptados).
+ * - Permitir buscar y/o filtrar animales (por nombre, raza, categoría, etc.).
+ * - Renderizar las listas resultantes mediante componentes de presentación*/
 
 function Catalogo() {
   // Estado para el término de búsqueda

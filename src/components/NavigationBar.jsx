@@ -122,6 +122,9 @@
 //   );
 // }
 
+/**
+ * Componente que engloba todos los elementos del menú de navegación de la página web
+ */
 // export default NavigationBar;
 import { useState } from "react";
 import { NavLink } from "react-router-dom";

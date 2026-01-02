@@ -1,5 +1,13 @@
 import { useState } from "react";
-
+/**
+ *Componente que implementa un formulario CONTROLADO para registrar un animal en PawPets.
+ *
+ *Funcionamiento:
+ * - Usa useState para almacenar todos los campos del formulario en un único objeto (animalData).
+ * - Usa un segundo estado (animalErrores) para guardar errores de validación por campo.
+ * - Valida los datos antes del envío mediante validarDatosFormulario().
+ * - Si la validación es correcta, muestra el resultado por consola y un alert
+ */
 const animalInfo = {
   nombre: "",
   raza: "",

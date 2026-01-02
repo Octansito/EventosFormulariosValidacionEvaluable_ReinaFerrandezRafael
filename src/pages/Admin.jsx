@@ -1,4 +1,4 @@
-import { NavLink, Navigate, useLocation } from "react-router-dom";
+import { NavLink, Outlet, Navigate, useLocation } from "react-router-dom";
 
 /**
  * Página de administración

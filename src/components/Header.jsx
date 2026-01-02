@@ -1,6 +1,13 @@
 import NavigationBar from "./NavigationBar";
 import Logo from "../assets/Logo5.png";
-
+/**
+ * Componente de cabecera (header) de la aplicación.
+ *
+ * Responsabilidades habituales:
+ * - Mostrar la identidad visual (logo / nombre de la app).
+ * - Incluir la navegación principal
+ *
+ */
 function Header() {
   return (
     <header className="bg-[var(--colorprimary)] w-full relative" role="banner">

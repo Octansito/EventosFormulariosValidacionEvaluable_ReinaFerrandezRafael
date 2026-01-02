@@ -22,13 +22,12 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         Saltar al contenido principal
       </a>
 
-      {(/**Compartes el estado del usaurio con toda la app */)}
+      {/**Compartes el estado del usaurio con toda la app **/}
       <AuthProvider>
         <BrowserRouter>
           <App />
         </BrowserRouter>
-      </AuthProvider>    
-        
+      </AuthProvider>
     </>
   </StrictMode>
 );

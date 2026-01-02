@@ -27,7 +27,7 @@ function Login() {
 
   return (
     <section className="max-w-md mx-auto p-6">
-      <h1 className="text-2xl font-bold mb-4">Accede a tu cuentaahora qu</h1>
+      <h1 className="text-2xl font-bold mb-4">Accede a tu cuenta</h1>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <label className="flex flex-col gap-1">

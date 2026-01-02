@@ -10,7 +10,7 @@ import ProtectedRoute from "./ProtectedRoute.jsx";
 import FormControlado from "./FormularioControladoAnimal.jsx";
 
 /**
- *
+ *Componente que definde toda la navegación de toda la app.
  *
  */
 
