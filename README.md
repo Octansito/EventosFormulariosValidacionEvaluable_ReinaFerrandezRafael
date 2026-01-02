@@ -90,3 +90,17 @@ Resultado Final:
 -Fichas con animal seleccionado y sin él
 ![alt text](image-2.png)
 ![alt text](image-3.png)
+
+## Storybook
+
+Este proyecto incluye Storybook para documentar y probar componentes de UI.
+
+### Ejecutar Storybook
+
+npm run storybook
+
+Historias del componente que permite visualizar los
+detalles de tus productos, en este caso, detallePerro y detalleGato
+
+![alt text](image-4.png)
+![alt text](image-5.png)
