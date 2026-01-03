@@ -99,8 +99,12 @@ Este proyecto incluye Storybook para documentar y probar componentes de UI.
 
 npm run storybook
 
-Historias del componente que permite visualizar los
-detalles de tus productos, en este caso, detallePerro y detalleGato
+Historias del componente que permite visualizar los detalles de tus productos, en este caso, detallePerro y detalleGato y, además, con la documentación narrativa
 
 ![alt text](image-4.png)
 ![alt text](image-5.png)
+![alt text](image-7.png)
+
+## Ejecutar Docusaurus con renderizado de Detalles StoryBook
+
+![alt text](image-6.png)
