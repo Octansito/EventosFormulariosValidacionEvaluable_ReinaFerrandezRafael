@@ -4,6 +4,8 @@ import { MemoryRouter, Routes, Route } from "react-router-dom";
 export default {
   title: "PawPets/Fichas (Detalle)",
   component: Fichas,
+  /**Generación automática de la documentación que conforma StroyBook */
+  tags: ["autodocs"],
   parameters: {
     layout: "fullscreen",
   },
