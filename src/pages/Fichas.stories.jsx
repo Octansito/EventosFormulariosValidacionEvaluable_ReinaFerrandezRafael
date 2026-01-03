@@ -4,16 +4,32 @@ import { MemoryRouter, Routes, Route } from "react-router-dom";
 export default {
   title: "PawPets/Fichas (Detalle)",
   component: Fichas,
-  /**Generación automática de la documentación que conforma StroyBook */
+  /** Generación automática de la documentación (Storybook Autodocs) */
   tags: ["autodocs"],
   parameters: {
     layout: "fullscreen",
+    docs: {
+      description: {
+        component: `
+**Fichas (Detalle)** muestra la ficha completa del animal seleccionado.
+
+- El animal se recibe mediante \`useLocation().state\` cuando se navega desde el catálogo.
+- Renderiza imagen, datos (nombre, raza, edad, sexo, ubicación, tamaño, chip), descripción y acciones.
+- Si se entra a la ruta sin \`state\`, se muestra un aviso de “No se encontró la ficha del animal”.
+
+A continuación se muestran ejemplos reales con las historias:
+- Detalle Perro
+- Detalle Gato
+- Sin Estado
+        `.trim(),
+      },
+    },
   },
 };
 
 /**
  * Decorator: envuelve Fichas en un Router y le inyecta location.state
- * para simular "venir desde el catálogo".
+ * para simular "venir desde el catálogo" con un animal concreto.
  */
 const withLocationState = (animal) => (Story) =>
   (
@@ -23,6 +39,18 @@ const withLocationState = (animal) => (Story) =>
       </Routes>
     </MemoryRouter>
   );
+
+/**
+ * Decorator: envuelve Fichas en un Router pero SIN state,
+ * para simular que el usuario entra directamente a /fichas.
+ */
+const withoutState = (Story) => (
+  <MemoryRouter initialEntries={["/fichas"]}>
+    <Routes>
+      <Route path="/fichas" element={<Story />} />
+    </Routes>
+  </MemoryRouter>
+);
 
 export const DetallePerro = {
   decorators: [
@@ -64,7 +92,6 @@ export const DetalleGato = {
   ],
 };
 
-/* (Opcional) Story extra por si quieres enseñar el estado “sin datos” */
 export const SinEstado = {
-  decorators: [withLocationState(null)],
+  decorators: [withoutState],
 };
