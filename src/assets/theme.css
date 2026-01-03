@@ -27,6 +27,8 @@
   /* CTA (botones naranjas) */
   --colorcta: #ff9800;
   --colorcta-hover: #f57c00;
+  --colorprimary-hover: #0a332c;
+
   /* Negros/Blancos */
   --colorblack-1: #000000;
   --colorblack-2: #1d1d1d;
